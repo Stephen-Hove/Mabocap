@@ -98,7 +98,7 @@ export default function Contact() {
                     data-wow-delay="0.2s"
                     style={{ color: "white" }}
                 >
-                    <h1 className="color-white">Say hello..</h1>
+                    <h1 className="color-white">Say hello...</h1>
                     <p className="color-white">
                     Leave a message and we will get back to you soon.
                     </p>
