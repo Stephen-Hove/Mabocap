@@ -6,7 +6,7 @@ export default function Footer() {
     const targetSection = document.getElementById(targetId);
   
     if (targetSection) {
-      const yOffset = -70; // Adjust this value to control how much above the target section you want to scroll
+      const yOffset = -100; // Adjust this value to control how much above the target section you want to scroll
       const y = targetSection.getBoundingClientRect().top + window.pageYOffset + yOffset;
   
       window.scrollTo({
