@@ -17,7 +17,7 @@ export default function Team() {
           <div className="team-member" data-aos="fade-up" data-aos-delay="100">
             <img
               className="mx-auto rounded-circle"
-              src="img/sizwe1.jpeg"
+              src="img/sizwe1.jpg"
               alt="..."
               style={{ height: "200px", width: "200px", objectFit: "cover" }}
             />
@@ -60,7 +60,7 @@ export default function Team() {
           <div className="team-member" data-aos="fade-up" data-aos-delay="100">
             <img
               className="mx-auto rounded-circle"
-              src="img/simba.jpeg"
+              src="img/simba.jpg"
               alt="..."
               style={{ height: "200px", width: "200px", objectFit: "cover" }}
             />

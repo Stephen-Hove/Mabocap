@@ -19,7 +19,7 @@ export default function About() {
             >
               <img
                 className="rounded-circle img-fluid"
-                src="img/s2.jpeg
+                src="img/s2.jpg
                 "
                 alt="..."
               />
@@ -57,7 +57,7 @@ export default function About() {
             >
               <img
                 className="rounded-circle img-fluid d-flex align-items-center"
-                src="img/v1.jpeg"
+                src="img/v1.jpg"
                 alt="..."
               />
             </div>
@@ -88,7 +88,7 @@ export default function About() {
             >
               <img
                 className="rounded-circle img-fluid"
-                src="img/h1.jpeg"
+                src="img/h1.jpg"
                 alt="..."
               />
             </div>
@@ -119,7 +119,7 @@ export default function About() {
             >
               <img
                 className="rounded-circle img-fluid"
-                src="img/vl1.jpeg"
+                src="img/vl1.jpg"
                 alt="..."
               />
             </div>
