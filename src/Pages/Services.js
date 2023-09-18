@@ -55,7 +55,7 @@ export default function Services() {
         <Col xs={12} md={6} lg={4} className="mb-3">
           <Card
             style={{
-              width: "70%",
+              width: "100%",
               backgroundSize: "cover",
               textAlign: "center",
             }}
@@ -112,7 +112,7 @@ export default function Services() {
         <Col xs={12} md={6} lg={4} className="mb-3">
           <Card
             style={{
-              width: "70%",
+              width: "100%",
               backgroundSize: "cover",
             }}
             onClick={() => setSelectedService(services[1])}
@@ -168,7 +168,7 @@ export default function Services() {
         <Col xs={12} md={6} lg={4} className="mb-3">
           <Card
             style={{
-              width: "70%",
+              width: "100%",
               backgroundSize: "cover",
             }}
             onClick={() => setSelectedService(services[2])}
@@ -224,7 +224,7 @@ export default function Services() {
         <Col xs={12} md={6} lg={4} className="mb-3">
           <Card
             style={{
-              width: "70%",
+              width: "100%",
               backgroundSize: "cover",
             }}
             onClick={() => setSelectedService(services[3])}
@@ -280,7 +280,7 @@ export default function Services() {
         <Col xs={12} md={6} lg={4} className="mb-3">
           <Card
             style={{
-              width: "70%",
+              width: "100%",
               backgroundSize: "cover",
             }}
             onClick={() => setSelectedService(services[4])}
@@ -336,7 +336,7 @@ export default function Services() {
         <Col xs={12} md={6} lg={4} className="mb-3">
           <Card
             style={{
-              width: "70%",
+              width: "100%",
               backgroundSize: "cover",
             }}
             onClick={() => setSelectedService(services[5])}
