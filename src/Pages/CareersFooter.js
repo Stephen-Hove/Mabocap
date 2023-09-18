@@ -20,22 +20,30 @@ export default function Footer() {
     <footer className="footer">
       <Container className="d-flex flex-column">
         <ul className="footer__nav d-flex flex-wrap">
-          <li className="footer__item">
-            <a className="footer__link" a href="/"
-            >
-              Home
-            </a>
-          </li>
-          <li className="footer__item">
-            <a className="footer__link" a href="/careers">
-              Careers
-            </a>
-          </li>
-          <li className="footer__item">
-            <a className="footer__link" a href="/gallery">
-              Gallery
-            </a>
-          </li>
+
+            <Col xs={4} md={4} lg={2}>
+                <li className="footer__item">
+                    <a className="footer__link" a href="/">
+                    Home
+                    </a>
+                </li>
+            </Col>
+
+            <Col xs={4} md={4} lg={2}>
+                <li className="footer__item">
+                    <a className="footer__link" a href="/careers">
+                    Careers
+                    </a>
+                </li>
+            </Col>
+
+            <Col xs={4} md={4} lg={2}>
+                <li className="footer__item">
+                    <a className="footer__link" a href="/gallery">
+                    Gallery
+                    </a>
+                </li>
+            </Col>
         </ul>
         <p className="footer__copyright">
           &copy; 2023 MABOCAP. All Rights Reserved. <br />
