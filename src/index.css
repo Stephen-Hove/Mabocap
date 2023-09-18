@@ -243,7 +243,7 @@ code {
 
 .section__title {
   max-width: 80rem;
-  margin: 0 auto 8rem auto;
+  margin: 0 auto 3rem auto;
 }
 
 .section__description {
@@ -823,7 +823,7 @@ code {
 #contact .contact-form,
 #contact .contact-thumb {
   padding: 22px 32px 22px 32px;
-  min-height: 75vh;
+  min-height: 50vh;
 }
 
 /* #contact .contact-img {

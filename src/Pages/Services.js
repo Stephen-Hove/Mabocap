@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Button, Col, Modal, Row } from "react-bootstrap";
+import { Button, Col, Modal, Row, Container } from "react-bootstrap";
 import Card from "react-bootstrap/Card";
 
 const services = [
@@ -37,20 +37,22 @@ export default function Services() {
   };
   return (
     <section className="page-section" id="services">
-      <div className="section__title d-flex justify-content-center flex-column" id="services">
-        <h2 className="section__description text-center">
-          Services
-        </h2>
-        <h3 className="section__header text-center mb-5">
-          Mabocap offers its clients the following services.
-        </h3>
-      </div>
+      <Container>
+      <Row className="mb-4">
+        <Col>
+          <div className="section__title d-flex justify-content-center flex-column" id="services">
+            <h2 className="section__description text-center">
+              Services
+            </h2>
+            <h3 className="section__header text-center mb-5">
+              Mabocap offers its clients the following services.
+            </h3>
+          </div>
+        </Col>
+      </Row>
 
-      <Row
-        className="d-flex justify-content-center mt-3 "
-        style={{ paddingLeft: "10rem", paddingRight: "10rem" }}
-      >
-        <Col md={4} className="mb-3">
+      <Row>
+        <Col xs={12} md={6} lg={4} className="mb-3">
           <Card
             style={{
               width: "70%",
@@ -107,7 +109,7 @@ export default function Services() {
             </Card.Body>
           </Card>
         </Col>
-        <Col md={4} className="mb-3">
+        <Col xs={12} md={6} lg={4} className="mb-3">
           <Card
             style={{
               width: "70%",
@@ -163,7 +165,7 @@ export default function Services() {
             </Card.Body>
           </Card>
         </Col>
-        <Col md={4} className="mb-3">
+        <Col xs={12} md={6} lg={4} className="mb-3">
           <Card
             style={{
               width: "70%",
@@ -219,7 +221,7 @@ export default function Services() {
             </Card.Body>
           </Card>
         </Col>
-        <Col md={4} className="mb-3">
+        <Col xs={12} md={6} lg={4} className="mb-3">
           <Card
             style={{
               width: "70%",
@@ -275,7 +277,7 @@ export default function Services() {
             </Card.Body>
           </Card>
         </Col>
-        <Col md={4} className="mb-3">
+        <Col xs={12} md={6} lg={4} className="mb-3">
           <Card
             style={{
               width: "70%",
@@ -331,7 +333,7 @@ export default function Services() {
             </Card.Body>
           </Card>
         </Col>
-        <Col md={4} className="mb-3">
+        <Col xs={12} md={6} lg={4} className="mb-3">
           <Card
             style={{
               width: "70%",
@@ -397,6 +399,7 @@ export default function Services() {
           <Button onClick={() => setShowModal(false)}>Close</Button>
         </Modal.Footer>
       </Modal>
+      </Container>
     </section>
   );
 }
