@@ -2,19 +2,6 @@ import React from "react";
 import { Col, Container } from "react-bootstrap";
 
 export default function Footer() {
-  function scrollToSection(targetId) {
-    const targetSection = document.getElementById(targetId);
-  
-    if (targetSection) {
-      const yOffset = -70; // Adjust this value to control how much above the target section you want to scroll
-      const y = targetSection.getBoundingClientRect().top + window.pageYOffset + yOffset;
-  
-      window.scrollTo({
-        top: y,
-        behavior: "smooth",
-      });
-    }
-  };
 
   return (
     <footer className="footer">
