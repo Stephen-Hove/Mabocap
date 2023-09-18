@@ -99,7 +99,7 @@ export default function Gallery() {
               occaecat cupidatat non proident, sunt in culpa qui officia
               deserunt mollit anim id est laborum.
             </h6>
-            <Carousel
+            {/* <Carousel
               activeIndex={carouselIndex}
               onSelect={handleCarouselSelect}
               style={{ marginTop: "-10rem" }}
@@ -109,7 +109,7 @@ export default function Gallery() {
                   <Image src={image} fluid />
                 </Carousel.Item>
               ))}
-            </Carousel>
+            </Carousel> */}
           </Modal.Body>
           <Modal.Footer>
             <Button onClick={() => setShowModal(false)}>Close</Button>
