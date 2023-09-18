@@ -15,8 +15,41 @@ function App() {
   return (
     <BrowserRouter>
       <PageTitleUpdater />
+
       <Routes>
         <Route path="/" element={<Home />} />
+      </Routes>
+
+      <Routes>
+        <Route path="/" element={<About />} />
+      </Routes>
+
+      {/* <Routes>
+        <Route path="/" element={<Services />} />
+      </Routes> */}
+
+      <Routes>
+        <Route path="/" element={<Team />} />
+      </Routes>
+
+      <Routes>
+        <Route path="/" element={<Projects />} />
+      </Routes>
+
+      <Routes>
+        <Route path="/" element={<Contact />} />
+      </Routes>
+
+      <Routes>
+        <Route path="/gallery" element={<Gallery />} />
+      </Routes>
+
+      <Routes>
+        <Route path="/careers" element={<Careers />} />
+      </Routes>
+
+      <Routes>
+        <Route path="/" element={<Footer />} />
       </Routes>
 
     </BrowserRouter>
