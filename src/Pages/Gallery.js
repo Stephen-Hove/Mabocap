@@ -99,17 +99,17 @@ export default function Gallery() {
               occaecat cupidatat non proident, sunt in culpa qui officia
               deserunt mollit anim id est laborum.
             </h6>
-            {/* <Carousel
+            <Carousel
               activeIndex={carouselIndex}
               onSelect={handleCarouselSelect}
-              style={{ marginTop: "-10rem" }}
+              style={{ marginTop: "-1rem", marginBottom: "0rem" }}
             >
               {selectedProject?.images.map((image, index) => (
                 <Carousel.Item key={index}>
-                  <Image src={image} fluid />
+                  <Image src={image} fluid className="fixed-image-height" />
                 </Carousel.Item>
               ))}
-            </Carousel> */}
+            </Carousel>
           </Modal.Body>
           <Modal.Footer>
             <Button onClick={() => setShowModal(false)}>Close</Button>

@@ -4,7 +4,7 @@ const projects = [
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     status: "Completed",
     image: "img/p2.jpg",
-    images: ["img/p2.jpg", "img/image3.jpg", "img/image4.jpg"],
+    images: ["img/p2.jpg", "img/image3.jpg", "img/image0.jpg"],
     category: "Residential",
   },
   {
