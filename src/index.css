@@ -47,10 +47,6 @@ code {
   margin-bottom: 1rem;
 }
 
-.page-section-contact {
-  margin-bottom: -1rem;
-}
-
 .page-section h3.section-subheading,
 .page-section .section-subheading.h3 {
   font-size: 1rem;
@@ -60,6 +56,10 @@ code {
     Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   margin-bottom: 4rem;
+}
+
+.map-section {
+  margin-bottom: -1rem;
 }
 
 .timeline {

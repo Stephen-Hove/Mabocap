@@ -10,6 +10,7 @@ import Footer from "./Pages/Footer";
 import Contact from "./Pages/Contact";
 import Gallery from "./Pages/Gallery";
 import Careers from "./Pages/Careers";
+import Map from "./Pages/GoogleMap";
 
 function App() {
   return (
@@ -38,6 +39,10 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Contact />} />
+      </Routes>
+
+      <Routes>
+        <Route path="/" element={<Map />} />
       </Routes>
 
       <Routes>
