@@ -38,7 +38,7 @@ export default function Contact() {
     setMessage("");
   };
   return (
-    <section className=" page-section" id="contact">
+    <section className=" page-section-contact" id="contact">
         <Container>
             
             <Row className="mb-4">

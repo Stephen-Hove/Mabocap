@@ -103,7 +103,6 @@ export default function Projects() {
           href="/gallery" // Replace with the actual URL
           className="d-flex justify-content-end"
           style={{ textDecoration: "none", color: "#d46a6a" }}
-          onClick={scrollToTop}
         >
           <b>View all</b>{" "}
           <span>

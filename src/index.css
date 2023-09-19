@@ -47,6 +47,10 @@ code {
   margin-bottom: 1rem;
 }
 
+.page-section-contact {
+  margin-bottom: -1rem;
+}
+
 .page-section h3.section-subheading,
 .page-section .section-subheading.h3 {
   font-size: 1rem;
@@ -831,11 +835,6 @@ code {
   min-height: 50vh;
 }
 
-/* #contact .contact-img {
-  background: url("../images/contact-img.jpg") no-repeat;
-  min-height: 75vh;
-} */
-
 #contact .contact-info {
   padding-top: 6px;
   padding-bottom: 6px;
@@ -889,15 +888,4 @@ code {
 
 #contact .fa {
   padding-right: 10px;
-}
-
-.carousel-control-prev-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23009be1' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
-  width: 30px;
-  height: 48px;
-}
-.carousel-control-next-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23009be1' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
-  width: 30px;
-  height: 48px;
 }
