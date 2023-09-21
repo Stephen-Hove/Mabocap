@@ -13,7 +13,7 @@ export default function PageWrapper() {
     const targetSection = document.getElementById(targetId);
   
     if (targetSection) {
-      const yOffset = -100; // Adjust this value to control how much above the target section you want to scroll
+      const yOffset = -70; // Adjust this value to control how much above the target section you want to scroll
       const y = targetSection.getBoundingClientRect().top + window.pageYOffset + yOffset;
   
       window.scrollTo({
@@ -39,7 +39,7 @@ export default function PageWrapper() {
             alt="Mabocap logo"
             id="logo"
             data-version-number="1.0"
-            style={{ width: "16rem", height: "auto" }}
+            style={{ width: "16rem", height: "auto", marginTop:"-2rem", marginBottom:"-2rem"}}
           />
         </Navbar.Brand>
         <Navbar.Toggle
