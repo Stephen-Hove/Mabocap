@@ -889,3 +889,62 @@ code {
 #contact .fa {
   padding-right: 10px;
 }
+
+/* Default styles for larger screens */
+.nav-links {
+  /* width: 7rem; */
+  color: #222;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+/* Default styles for larger screens */
+/* .nav-blank {
+  width: 7rem;
+  color: #222;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: -1rem;
+  margin-left: 10rem;
+} */
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .nav-blank {
+    /* Adjust styles for smaller screens */
+    width: 100%; /* Make the element span the full width */
+    text-align: center; /* Center the text */
+    margin-top: 0.5rem; /* Adjust margin for spacing */
+    margin-left: 0; /* Remove left margin */
+    font-size: 1rem; /* Adjust font size */
+    font-weight: 500; /* Adjust font weight */
+  }
+}
+
+
+#contact-button {
+  background-color: #d46a6a;
+  border-radius: 3rem;
+  border-color: #d46a6a;
+  color: #222;
+  margin-top: 0.7rem;
+  width: 7rem;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .nav-links, .nav-blank {
+    /* Adjust styles for smaller screens */
+    width: 100%; /* Make the links span the full width */
+    text-align: center; /* Center the text */
+    margin-top: 0.5rem; /* Reduce top margin for spacing */
+  }
+  
+  #contact-button {
+    /* Adjust button styles for smaller screens */
+    width: 100%; /* Make the button span the full width */
+    margin-top: 0.5rem; /* Reduce top margin for spacing */
+  }
+}
+

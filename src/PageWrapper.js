@@ -1,28 +1,43 @@
 import React, { useState } from "react";
-
 import { Container, Navbar, Nav, Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 export default function PageWrapper() {
-  const [expanded, setExpanded] = useState(true);
+  const [expanded, setExpanded] = useState(false);
 
   const toggleNavbar = () => {
     setExpanded(!expanded);
   };
 
+  function closeNavbar() {
+    setExpanded(false);
+  }
+
   function scrollToSection(targetId) {
     const targetSection = document.getElementById(targetId);
-  
+    closeNavbar(); // Close the menu when an item is clicked
+
     if (targetSection) {
-      const yOffset = -70; // Adjust this value to control how much above the target section you want to scroll
-      const y = targetSection.getBoundingClientRect().top + window.pageYOffset + yOffset;
-  
+      const yOffset = -100;
+      let y =
+        targetSection.getBoundingClientRect().top + window.scrollY + yOffset;
+
+      if (expanded) {
+        // If the Navbar is expanded (mobile mode), subtract the height of the Navbar
+        const navbarHeight =
+          document.querySelector(".navbar").offsetHeight - 160;
+        y -= navbarHeight;
+      }
+
       window.scrollTo({
         top: y,
         behavior: "smooth",
       });
+
+      
     }
-  };    
-  
+  }
+
   return (
     <Navbar
       collapseOnSelect
@@ -30,84 +45,72 @@ export default function PageWrapper() {
       bg="light"
       variant="light"
       sticky="top"
+      expanded={expanded}
     >
       <Container>
         <Navbar.Brand href="/">
-          {" "}
           <img
             src="img/logo.png"
             alt="Mabocap logo"
             id="logo"
             data-version-number="1.0"
-            style={{ width: "16rem", height: "auto", marginTop:"-2rem", marginBottom:"-2rem"}}
+            style={{ width: "12rem", height: "auto"}}
           />
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
-          style={{
-            border: "none",
-            fontSize: "1.5rem",
-            color: "#222",
-            marginTop: "1rem",
-          }}
           onClick={toggleNavbar}
         />
-        <Navbar.Collapse id="responsive-navbar-nav ">
-          <Container
-            className={`d-flex ${
-              expanded ? "justify-content-end" : "justify-content-start"
-            }`}
-          >
-            <Nav className=" ml-auto " style={{ gap: "1rem" }}>
+        <Navbar.Collapse id="responsive-navbar-nav" >
+          <Container 
+          className={`d-flex ${
+            expanded ? "justify-content-start" : "justify-content-end"
+          }`}>
+            <Nav className="mr-auto" >
               <Nav.Link
-                //href="#about"
-                onClick={() => scrollToSection("about")}
+                id="about-link"
                 style={{
                   color: "#222",
                   fontSize: "1.2rem",
                   fontWeight: "400",
                   marginTop: "1rem",
                 }}
+                onClick={() => scrollToSection("about")}
               >
                 About Us
               </Nav.Link>
               <Nav.Link
-                //href="#services"
-                onClick={() => scrollToSection("services")}
                 style={{
                   color: "#222",
                   fontSize: "1.2rem",
                   fontWeight: "400",
                   marginTop: "1rem",
                 }}
+                id="services-link"
+                onClick={() => scrollToSection("services")}
               >
                 Services
               </Nav.Link>
               <Nav.Link
-                //href="#projects"
-                onClick={() => scrollToSection("projects")}
                 style={{
                   color: "#222",
                   fontSize: "1.2rem",
                   fontWeight: "400",
                   marginTop: "1rem",
                 }}
+                id="projects-link"
+                onClick={() => scrollToSection("projects")}
               >
                 Projects
               </Nav.Link>
               <Nav.Link onClick={() => scrollToSection("contact")}>
-                {" "}
-                <Button
-                  style={{
+                <Button style={{
                     backgroundColor: "#d46a6a",
                     borderRadius: "3rem",
                     borderColor: "#d46a6a",
                     color: "#222",
                     marginTop: "0.5rem",
-                  }}
-                >
-                  Contact Us
-                </Button>
+                  }}>Contact Us</Button>
               </Nav.Link>
             </Nav>
           </Container>
