@@ -64,7 +64,7 @@ export default function PageWrapper() {
         <Navbar.Collapse id="responsive-navbar-nav" >
           <Container 
           className={`d-flex ${
-            expanded ? "justify-content-start" : "justify-content-end"
+            expanded ? "justify-content-center" : "justify-content-end"
           }`}>
             <Nav className="mr-auto" >
               <Nav.Link
@@ -74,6 +74,7 @@ export default function PageWrapper() {
                   fontSize: "1.2rem",
                   fontWeight: "400",
                   marginTop: "1rem",
+                  textAlign: "center",
                 }}
               >
                 Home
@@ -84,6 +85,7 @@ export default function PageWrapper() {
                   fontSize: "1.2rem",
                   fontWeight: "400",
                   marginTop: "1rem",
+                  textAlign: "center",
                 }}
                 href="/gallery"
                 onClick={() => scrollToSection("services")}
@@ -96,6 +98,7 @@ export default function PageWrapper() {
                   fontSize: "1.2rem",
                   fontWeight: "400",
                   marginTop: "1rem",
+                  textAlign: "center",
                 }}
                 href="/careers"
               >
